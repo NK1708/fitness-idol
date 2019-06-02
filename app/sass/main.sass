@@ -1,0 +1,833 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+*::-webkit-input-placeholder
+	color: #B4B4B4
+	opacity: 1
+
+*:-moz-placeholder
+	color: #B4B4B4
+	opacity: 1
+
+*::-moz-placeholder
+	color: #B4B4B4
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #B4B4B4
+	opacity: 1
+*:focus
+	outline: 0
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #B4B4B4
+body input:required:valid,
+body textarea:required:valid
+	color: #B4B4B4
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	position: relative
+	line-height: 1.5
+	font-family: intro
+	overflow-x: hidden
+	opacity: 1
+	color: black
+	margin: 0
+	padding: 0
+	height: 1000px
+
+.header
+	background-color: rgba(0, 0, 0, 0.3)
+	text-transform: uppercase
+	color: #fff
+	font-size: 20px
+	line-height: 25px
+	z-index: 5
+	position: fixed
+	width: 100%
+	&-content
+		display: flex
+		justify-content: space-around
+		width: 100%
+		&__left
+			text-align: right
+			padding-top: 30px
+		&__logo
+			background-image: url(../img/logo_fon.png)
+			background-repeat: no-repeat
+			padding: 17px 35px
+			width: 300px
+			img
+				width: 190px
+		&__right
+			padding-top: 30px
+			a
+				color: #fff
+				border: 2px solid #fff
+				padding: 10px 35px
+				border-radius: 30px
+			a:hover, a:active, a:focus
+				color: #fff
+				text-decoration: none
+
+.first-block
+	background-image: url(../img/fon.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+.first-place
+	margin-top: 31vh
+	color: #fff
+	z-index: 2
+	margin-left: -62px
+	.col-sm-12, .container, .row
+		position: relative
+		height: 100%
+		z-index: 2
+	&__line
+		font-size: 28px
+		position: relative
+	&__line:before
+		content: 'Верь в себя'
+		position: absolute
+		color: #FF0000
+		right: 0
+		top: -35px
+	&__line:after
+		content: 'Верь в себя'
+		position: absolute
+		color: #33559B
+		right: 0
+		top: -65px
+	&__line2
+		font-size: 63px
+		display: block
+	&__line3
+		color: #FF0000
+		font-size: 14px
+		display: none
+
+.first-bottom
+	width: 100%
+	background-color: #fff
+	position: absolute
+	bottom: 0
+	left: 0
+	z-index: 2
+	text-align: center
+	padding-bottom: 15px
+	&__text
+		font-size: 50px
+		margin: 0 auto
+		color: #888888
+		.red
+			font-size: 100px
+	&__oferta
+		display: block
+		font-family: century
+		font-size: 14px
+
+.first-place-title
+	position: absolute
+	left: 5px
+	bottom: 115px
+	background-color: #db0000
+	text-transform: uppercase
+	font-size: 77px
+	padding: 20px
+	.first-place-title__one
+		color: #fff
+	.first-place-title__two
+		color: #000
+
+.first-h-absolute
+	position: absolute
+	right: 50px
+	bottom: 50px
+	width: 500px
+	font-size: 33px
+
+.second-content-hhide
+	display: none
+
+.second-block
+	height: 100%
+	color: #fff
+	z-index: 2
+	text-align: center
+	background-image: url(../img/fon1.jpg)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50%
+.dark-block:after
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: black
+	opacity: 0.5
+	z-index: 0
+
+
+.second-content
+	z-index: 2
+	padding: 30px 0
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+	&__done
+		position: relative
+		width: 660px
+		margin: 0 auto
+		visibility: hidden
+		img
+			margin-left: -87px
+			margin-bottom: 20px
+	&__done:before
+		content: ''
+		position: absolute
+		background-image: url(../img/arrow.png)
+		background-repeat: no-repeat
+		height: 420px
+		width: 170px
+		left: -188px
+		top: 113px
+	&__social
+		display: flex
+		justify-content: center
+		margin-top: 15px
+		span
+			color: black
+			text-align: right
+			margin-right: 25px
+		.vk
+			margin-right: 5px
+
+
+
+.generator
+	background-color: #fff
+	width: 660px
+	margin: 0 auto
+	position: relative
+	z-index: 2
+	&__place
+		padding: 30px
+		z-index: 2
+		position: relative
+		height: 100%
+		width: 100%
+		background-color: #fff
+	&__img
+		width: 110px
+	&__title
+		font-size: 24px
+		color: #FF221F
+		margin-top: 12px
+	&__box
+		border: 1px solid #E5E5E5
+		padding: 40px 0
+		color: black
+		text-align: center
+		font-family: century
+		text-transform: uppercase
+		font-size: 16px
+		margin-bottom: 35px
+	&__btn
+		font-size: 16px
+		border: none
+		border-radius: 30px
+		padding: 10px 15px
+		background-color: #FF221F
+	&__btn:hover
+		background-color: #FE0000
+.generator:before
+	content: ''
+	position: absolute
+	top: 6px
+	left: -6px
+	width: 100%
+	height: 100%
+	background-color: #33559B
+	z-index: 1
+.generator:after
+	content: ''
+	position: absolute
+	top: -6px
+	right: -6px
+	width: 100%
+	height: 100%
+	background-color: #FBFF00
+	z-index: 1
+
+
+
+.third-block
+	background-image: url(../img/fon2.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: 50%
+	font-size: 27px
+	text-align: center
+	&__top
+		padding: 20px 0 14px
+		font-size: 28px
+		&-line1
+			color: #fff
+		&-line2
+			color: black
+			width: 776px
+			margin: 0 auto
+			background-color: #F2FF00
+.third-content
+	background-color: #fff
+	text-align: center
+	font-family: century
+	font-weight: 100
+	z-index: 2
+	&__items
+		text-align: center
+		margin-top: 20px
+		select
+		    color:#A9A9A9
+		select option
+			color:#A9A9A9
+		select option.nms
+			color: red
+		.select2-container
+			width: 420px!important
+			display: block
+			margin: 0 auto
+			margin-bottom: 5px
+		.select2-selection--single
+			border: 2px solid black
+			border-radius: 0
+			height: 53px
+		.select2-container--default
+			.select2-selection--single
+				.select2-selection__arrow
+					background-image: url(../img/fire.png)
+					background-color: black
+					height: 50px
+					width: 50px
+					background-repeat: no-repeat
+					background-position: 50% 50%
+					b
+						display: none
+				.select2-selection__rendered
+					text-align: left
+					margin-top: 9px
+					padding-left: 20px
+					padding-right: 70px
+					color: #B4B4B4
+	.select2-results__option[aria-selected]
+		text-align: left
+	.select2-container *:focus
+        border: 2px solid #F70002
+        .select2-selection__arrow
+        	background-color: #F70002
+	.main-input
+		border: none
+		border-bottom: 1px solid #B4B4B4
+		width: 420px
+		color: #B4B4B4
+		padding: 0 15px
+		display: block
+		margin: 0 auto
+		margin-bottom: 25px
+		color: #F70002
+	input[type="phone"]
+		color: #F70002
+	.book_button
+		margin: 20px 0
+.select2-search
+	display: none!important
+.select2-container--open
+	.select2-dropdown--below
+		width: 370px!important
+		border: 2px solid #F70002
+		top: -2px
+		color: #969696
+		font-weight: 100
+		font-family: century
+		font-size: 16px
+.select2-container--default
+	.select2-results>.select2-results__options
+		max-height: 600px
+	.select2-results__option--highlighted[aria-selected]
+		background-color: #fff
+		color: #F70002
+	.select2-results__option[aria-selected=true]
+		background-color: #fff
+
+.select2-container--default
+	.select2-results__option[aria-disabled=true]:first-child
+		display: none
+
+.final-price
+	font-family: century-bold
+	margin: 30px 0
+	&__text
+		color: #969696
+	&__number
+		color: #F70002
+		margin-left: 10px
+.accord
+	max-width: 420px
+	margin: 0 auto
+	input, label
+		display: inline-block
+		vertical-align: top
+	label
+		font-size: 12px
+		width: 420px
+		line-height: 15px
+	.checkbox
+		position: absolute
+		z-index: -1
+		opacity: 0
+	.checkbox + label
+		position: relative
+		padding-left: 50px
+		cursor: pointer
+	.checkbox + label:before
+		content: ''
+		position: absolute
+		top: 30px
+		left: 0
+		width: 27px
+		height: 27px
+		background: #fff
+		border: 1px solid #F70002
+	.checkbox + label:after
+	.checkbox:checked + label:before
+		background-image: url(../img/check.png)
+		background-repeat: no-repeat
+		background-position: 50% 50%
+	.checkbox:checked + label:after
+		left: 26px
+	.checkbox:focus + label:before
+
+.third-block__oferta
+	color: #fff
+	text-align: center
+	font-size: 14px
+	font-family: century
+	z-index: 2
+	position: absolute
+	bottom: 0
+	width: 100%
+	padding-bottom: 20px
+
+
+
+.fourth-content
+	height: 100%
+	position: relative
+	display: flex
+	&__map
+		height: 100%
+		width: 70%
+		.ymaps-2-1-62-map
+			width: 100%!important
+			height: 100%!important
+	&__list
+		font-size: 18px
+		position: relative
+		ul
+			list-style-type: none
+			padding-left: 52px
+			li
+				margin-bottom: 30px
+				cursor: pointer
+			.active, li:hover
+				address
+					span
+						color: #F70002
+			address
+				font-style: normal
+			span
+				display: block
+	&__title
+		color: black
+		font-family: intro
+		text-transform: uppercase
+	&__address
+		font-family: century
+		color: #838383
+	&__phonebox
+		font-family: intro
+		text-transform: uppercase
+	&__phonetext
+		color: #4E4E4E
+		display: inline-block!important
+	&__phonenumber
+		display: inline-block!important
+		a
+			color: #F70002
+			font-size: 24px
+	&__menu
+		background-color: #fff
+		height: 100%
+		width: 30%
+		font-family: century
+		font-size: 27px
+		padding-top: 30px
+		padding-left: 20px
+		.select2-container
+			width: 320px!important
+			display: block
+			margin-bottom: 40px
+		.select2-selection--single
+			border: 2px solid black
+			border-radius: 0
+			height: 53px
+		.select2-container--default
+			.select2-selection--single 
+				.select2-selection__arrow
+					background-image: url(../img/fire.png)
+					background-color: black
+					height: 50px
+					width: 50px
+					background-repeat: no-repeat
+					left: 1px
+					background-position: 50% 50%
+					b
+						display: none
+				.select2-selection__rendered
+					text-align: left
+					margin-top: 9px
+					padding-left: 65px
+					color: #B4B4B4
+	.select2-container *:focus
+		border: 2px solid #F70002
+		.select2-selection__arrow
+			background-color: #F70002
+.map-select-parent
+	.select2-container--open 
+		.select2-dropdown--below
+			width: 270px!important
+			border: 2px solid #F70002
+			top: -2px
+			color: #969696
+			font-weight: 100
+			font-family: century
+			font-size: 27px
+			margin-left: 50px
+
+[class*="ymaps-2"][class*="-ground-pane"] 
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale")
+    -webkit-filter: grayscale(100%)
+
+.fourth-content__map>ymaps
+    pointer-events: none
+.fourth-content__map>ymaps.clicked
+	pointer-events: auto
+
+#mobile-swipe
+	display: none
+
+
+.fifth-block
+	padding-top: 0
+	color: #fff
+	&__text
+		display: flex
+		justify-content: space-between
+		font-size: 40px
+		padding-top: 28vh
+		line-height: 50px
+	&__left
+		text-align: right
+		margin-left: 110px
+	&__right
+		text-align: left
+		margin-right: -20px
+	&__bottom
+		position: relative
+		margin-bottom: 19vh
+	.web-logo
+		position: absolute
+		left: 50%
+		bottom: -143px
+		margin: 0 0 0 -123px
+		background-color: #FF0612
+		padding: 10px 15px
+		border-radius: 100px
+		border: 3px solid #fff
+		span
+			color: #fff
+			display: block
+			text-decoration: none
+			font-size: 10px
+		a:hover, a:focus, a:active
+			text-decoration: none 
+			span
+				color: #fff
+				display: block
+				text-decoration: none
+	&__btn
+		font-size: 74px
+		background-color: #FF0612
+		padding: 40px 90px
+		color: #fff
+		border-radius: 100px
+		border: 5px solid #fff
+		margin-bottom: 50px
+	&__btn:hover, &__btn:active, &__btn:focus
+		color: #fff
+		text-decoration: none
+	.fifth-content
+		position: relative
+		height: 100%
+		text-align: center
+		background-image: url(../img/last-fon.jpg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: 50%
+		.container, .row, .col-sm-12
+			height: 100%
+		.col-sm-12
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+	.black
+		color: black
+		
+		
+
+
+.mobile-footer
+	display: none
+	background-color: #F70002
+	width: 100%
+	position: absolute
+	bottom: 0
+	text-align: center
+	padding: 25px 0
+	z-index: 2000
+	.book-link
+		color: #fff
+		border: 2px solid #fff
+		padding: 10px 35px
+		-webkit-border-radius: 30px
+		border-radius: 30px
+	.book-link:hover, .book-link:active, .book-link:focus
+		text-decoration: none
+		color: #fff
+
+
+#product-modal
+	display: none
+
+.hidden-list
+	display: none
+
+.book_button
+	font-family: intro
+	background-color: #FF0000
+	text-transform: uppercase
+	border: none
+	color: #fff
+	border-radius: 50px
+	padding: 15px 35px
+
+.book_button:active
+	background-color: #636363
+
+.book_button:hover, .book_button:active, .book_button:focus
+	color: #fff
+	text-decoration: none
+
+.form_message
+	font-size: 20px
+
+.dark
+	background-color: black
+	opacity: 0.7
+	z-index: 1
+	height: 100%
+	width: 100%
+	position: absolute
+
+.error
+	border-bottom: 1px solid red!important
+
+.red
+	color: #FF0000
+
+.rubl
+	font-family: ptsans
+	font-weight: bold
+	color: #888888
+	font-size: 100px
+
+h1, h2, h3, h4
+	font-weight: 100
+
+.canvas-layer
+	display: none
+
+.year
+	position: relative
+.year:after
+	content: "*"
+	color: #fff
+	font-size: 20px
+	font-family: arial
+	position: absolute
+	top: 0
+	right: -13px
+
+#msg_pop
+	background-color: #fff
+	display: none
+	position: fixed
+	z-index: 99999
+	bottom: 0
+	left: 0
+	width: 100%
+	line-height: 14px
+	padding: 10px 15%
+	color: black
+	font-size: 11px
+	font-family: century
+	text-align: center
+.msg_close
+	position: absolute
+	right: 13px
+	top: 11px
+	width: 32px
+	height: 32px
+	cursor: pointer
+.msg_close:before, .msg_close:after 
+	position: absolute
+	left: 15px
+	content: ' '
+	height: 26px
+	width: 3px
+	background-color: #333
+.msg_close:before
+	transform: rotate(45deg)
+.msg_close:after
+	transform: rotate(-45deg)
+.fadeIn
+	animation-name: fadeIn
+	-webkit-animation-name: fadeIn
+	animation-duration: 0.4s;
+	-webkit-animation-duration: 0.4s
+	animation-timing-function: ease-in-out 
+	-webkit-animation-timing-function: ease-in-out     
+	visibility: visible !important
+  
+@keyframes fadeIn
+    0%
+    	transform: scale(0.7)
+    	opacity: 0.5
+    80%
+    	transform: scale(1.1)     
+    100%
+    	transform: scale(1)
+    	opacity: 1
+  
+@-webkit-keyframes fadeIn
+	0%
+		-webkit-transform: scale(0.7)
+		opacity: 0.5
+	80%
+		-webkit-transform: scale(1.1)      
+	100%
+		-webkit-transform: scale(1)
+		opacity: 1 
+
+.ps__thumb-y
+	background-color: red
+	right: -2px
+
+.ps__rail-x, .ps__rail-y
+	opacity: 0.6
+	right: 5px
+	background-color: #fff!important
+	width: 2px
+
+.century
+	font-family: ptsans
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+section
+	background-color: #fff
+	display: flex
+	flex-direction: column
+	padding-top: 97px
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.center
+	margin: 0 auto
+
+.form-red-text
+	color: #db0000
+	font-size: 20px
+	font-weight: bold
+
+.btn-dark
+	display: none
+	font-family: intro
+	background-color: #000
+	text-transform: uppercase
+	border: none
+	color: #fff
+	-webkit-border-radius: 50px
+	border-radius: 50px
+	padding: 10px 80px
+	&:hover
+		text-decoration: none
+		color: #fff
+
+.modal
+	display: none
+	background: #fff
+	position: fixed
+	top: 250px
+	right: 50%
+	left: 50%
+	transform: translate(-50%, 0)
+	padding: 10px
+	width: 100%
+	max-width: 575px
+	z-index: 10000
+	h2
+		padding-top: 100px
+		text-align: center
+	p
+		font-family: century
+		text-align: center
+	&.active
+		display: block
+	.modal-close
+		background-image: url(../img/closeicon.jpg)
+		background-repeat: no-repeat
+		border-radius: 50%
+		width: 60px
+		height: 60px
+		float: right
+		cursor: pointer
+
+@import "media" // Всегда в конце

@@ -1,0 +1,696 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+	.second-block
+		.second-content__info
+			padding: 60px 2% 0
+
+	.fourth-content__list
+		ul
+			padding-left: 0
+			font-size: 14px
+			li
+				margin-bottom: 17px
+	.fourth-content__phonebox
+		padding-left: 0
+
+	.fourth-content__menu
+		.select2-selection--single
+			width: 260px
+
+	.fifth-block
+		&__text
+			font-size: 28px
+			line-height: 35px
+		&__btn
+			font-size: 59px
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.header
+		&-content
+			text-align: center
+			&__left, &__right
+				display: none
+			&__logo
+				margin: 0 auto
+				background-position: 21px
+
+	.first-block
+		padding-bottom: 228px
+
+	.first-place
+
+
+	.mobile-footer
+		display: block
+		position: sticky
+		bottom: 0
+		width: 100%
+
+	.second-block
+		padding-bottom: 228px
+		.second-content
+			height: 100%
+			&__sale
+				img
+					width: 150px
+				&-text
+					span
+						text-align: center
+			&__chronology
+				width: 600px
+			&__time
+				width: 600px
+			&__done:before
+				display: none
+
+	.third-block
+		&__top
+			font-size: 20px
+			&-line2
+				width: 556px
+
+	.third-content
+		margin: 0
+		height: 100%
+
+	.fourth-block
+		padding-bottom: 228px
+
+	.fifth-block
+		padding-bottom: 74px
+		display: flex
+		flex-direction: column
+		&__text
+			display: none
+		&__btn
+			display: none
+		.fifth-content
+			height: 50%
+	.fifth-mobile
+		height: 50%!important
+		background-color: #FF0000
+		text-align: center
+		display: flex
+		position: relative
+		&__box
+			position: absolute
+			width: 100%
+			top: -16px
+		&__btn
+			font-size: 24px
+			background-color: #FF0612
+			padding: 15px 35px
+			color: #fff
+			border-radius: 100px
+			border: 5px solid #fff
+		&__btn:hover, &__btn:active, &__btn:focus
+			color: #fff
+			text-decoration: none
+		&__text
+			margin: auto
+	.sixth-block
+		padding-bottom: 228px
+	.sixth-content__phrase
+		line-height: 65px
+		margin-bottom: 41px
+	.sixth-content
+		.book_button
+			font-size: 64px
+	.dark
+		height: 100%
+
+	.fourth-content__menu
+		height: 100%
+		width: 100%
+		padding-top: 30px
+		z-index: 11
+		ul
+			span
+				font-size: 16px
+			li
+				margin-bottom: 15px
+			li:hover
+				cursor: auto
+				address
+					span
+						color: black
+					.fourth-content__address
+						color: #838383
+			.active
+				address
+					span
+						color: black
+					.fourth-content__address
+						color: #838383
+	.fourth-content__phonebox
+		font-size: 20px
+		a
+			font-size: 20px
+	.fourth-content
+		display: block
+	.fourth-content__map
+		display: none
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	body
+		overflow-x: hidden!important
+
+	.first-block
+		padding-bottom: 138px
+		background-position-x: 70%
+
+	.first-place
+		margin-left: 0
+		margin-top: 0
+		&__line
+			display: none
+		&__line2
+			font-size: 42px
+			margin-top: 32px
+			width: 200px
+			line-height: 52px
+		&__line3
+			display: block
+
+	.second-block
+		padding-bottom: 203px
+		background-position-x: 7%
+		.second-content
+			height: 100%
+			&__done
+				width: 420px
+				margin-bottom: 20px
+				img
+					width: 100%
+					margin-left: 0
+
+	.generator
+		width: 420px
+		&__place
+			padding: 10px
+		&__title
+			font-size: 12px
+		&__box
+			font-size: 12px
+			padding: 18px 0
+		&__btn
+			font-size: 12px
+
+	.third-block
+		&__top
+			font-size: 16px
+			.container
+				padding: 0
+				margin: 0
+			&-line2
+				width: 100%
+
+	.mobile-footer
+		.book-link
+			font-size: 32px
+			line-height: 43px
+
+
+	.fourth-block
+		padding-bottom: 138px
+
+	.fifth-block
+		padding-bottom: 93px
+
+
+	.sixth-block
+		padding-bottom: 138px
+
+	.sixth-content__phrase
+		line-height: 35px!important
+		margin-bottom: 20px!important
+		font-size: 36px
+	.sixth-content
+		.book_button
+			font-size: 39px
+			padding: 15px 37px
+
+	.dark
+		height: 100%
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+
+	.first-block
+		background-size: 389%
+		background-position-y: 0
+
+
+
+	.second-block
+		padding-bottom: 138px
+		.second-content
+			height: 100%
+			padding-top: 35px
+			&__sale
+				img
+					width: 137px
+				&-text
+					span
+						text-align: center
+					&line1
+						font-size: 27px
+					&line2
+						font-size: 19px
+						margin-top: 0
+			&__chronology
+				width: 90%
+			&__time
+				width: auto
+				font-size: 16px
+				line-height: 20px
+			&__oferta
+				font-size: 10px
+			&__done
+				width: 280px
+				img
+					margin-bottom: 15px
+			&__social
+				span
+					font-size: 10px
+				.vk, .fb
+					img
+						height: 30px
+
+	.generator
+		width: 280px
+		&__title
+			font-size: 12px
+		&__box
+			font-size: 7px
+			padding: 18px 0
+			margin-bottom: 10px
+		&__btn
+			font-size: 12px
+
+	.third-block
+		&__top
+			padding: 0
+
+	.third-content__items
+		.select2-container
+			width: 280px!important
+			font-size: 24px
+
+	.third-content
+		font-size: 17px
+		margin-top: 0!important
+		.container
+			height: 62%
+		.row, .col-sm-12
+			height: 100%
+		#query-form
+			height: 100%
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+		&__items
+			margin-top: 5px
+			height: 100%
+			.select2-selection--single
+				height: 35px
+		.main-input
+			width: 100%
+			margin-bottom: 7px
+		.book_button
+			font-size: 19px!important
+			margin: 4px 0!important
+			padding: 4px 10px!important
+
+	.accord
+		label
+			font-size: 8px!important
+			line-height: 9px!important
+	.accord .checkbox+label:before
+		top: 12px
+	.third-content__items
+		.select2-container--default
+			.select2-selection--single
+				.select2-selection__arrow
+					height: 33px
+					width: 33px
+					background-size: 20px
+				.select2-selection__rendered
+					margin-top: 0
+					font-size: 12px
+		.select2-container--open
+			.select2-dropdown--below
+				width: 280px!important
+	.select2-container--open
+		.select2-dropdown--below
+			font-size: 15px
+
+	.final-price
+		margin: 5px 0
+
+	.accord
+		label
+			width: 100%
+
+
+
+
+	.fourth-content__menu 
+		padding-top: 10px
+		ul 
+			li
+				margin-bottom: 2px!important
+			span
+				font-size: 12px
+
+	.fourth-content__menu 
+		.select2-selection--single
+			height: 34px
+			width: 280px
+		.select2-container
+			margin-bottom: 13px
+
+	.fourth-content__menu 
+		.select2-container--default 
+			.select2-selection--single 
+				.select2-selection__arrow
+					height: 33px
+					width: 33px
+					background-size: 20px
+				.select2-selection__rendered
+					margin-top: 0
+					font-size: 12px
+					padding-left: 45px
+	
+	.fourth-content__list
+		height: 92%!important
+		width: 75%!important
+
+	.fifth-block
+		padding-bottom: 0
+		.fifth-content
+			padding-top: 20px
+			height: 60%
+			.container
+				height: 100%
+			.row
+				height: 100%
+			.col-sm-12
+				height: 100%
+				display: flex
+				flex-direction: column
+				justify-content: space-around
+		.fifth-content__phrase
+			font-size: 17px!important
+			line-height: 29px!important
+		.fifth-content__box
+			font-size: 10px
+			margin-top: 0
+		.fifth-content__list
+			margin-bottom: 43px
+			overflow-y: scroll
+			height: 196px
+			display: block
+			ul
+				margin-bottom: 3px
+				padding-left: 16px
+				height: auto
+				span
+					font-size: 11px
+		.fifth-mobile__btn
+			padding: 10px 25px
+
+
+	.fifth-block
+		.fifth-content__more
+			font-size: 11px
+			bottom: 0
+
+	.sixth-content__phrase
+		line-height: 27px
+		margin-bottom: 41px
+		font-size: 34px
+		width: 91%
+		margin: 0 auto
+	.sixth-content
+		&__box
+			br
+				display: block
+		.book_button
+			font-size: 20px
+			padding: 15px 37px
+
+
+	.fourth-content__list
+		height: 87%
+		ul 
+			li
+				margin-bottom: 13px
+
+	.map-select-parent
+		.select2-container--open
+			.select2-dropdown--below
+				width: 182px!important
+				font-size: 14px
+				margin-left: 33px
+
+	.header-mobile
+		.col-sm-12
+			padding: 0
+
+	.mobile-footer
+		.book-link
+			font-size: 20px
+			line-height: 20px
+	.form-red-text
+		font-size: 12px
+
+
+@media only screen and (max-height : 900px)
+
+	.first-place__title
+		margin-top: 20px
+		padding: 15px 80px
+		font-size: 56px
+		line-height: 62px
+
+	.second-content__sale
+		img
+			width: 190px
+
+	.generator__place
+		padding: 10px
+
+	.third-content
+		margin-top: 0
+
+
+	.fifth-content__phrase
+		font-size: 43px
+
+	.fourth-content__list
+		ul
+			li
+				margin-bottom: 13px
+
+
+	.fifth-block
+		.fifth-content__phrase
+			font-size: 40px
+			line-height: 48px
+
+	.fifth-content__box
+		font-size: 20px
+	.fifth-content__list
+		ul
+			span
+				font-size: 13px
+
+	.fourth-content__menu
+		.select2-container
+			margin-bottom: 0px
+
+@media only screen and (max-height : 700px)
+	.first-bottom__text
+		.red
+			font-size: 74px
+		.rubl
+			font-size: 74px
+
+	.fourth-content__list
+		height: 410px
+		width: 300px
+
+	.second-content
+		padding: 0
+
+	.second-content__done 
+		img
+			width: 400px
+			    margin-left: -278px
+	.second-content__done:before
+		top: 55px
+
+	.generator__title
+		margin-bottom: 5px
+	.generator__box
+		margin-bottom: 19px
+
+	.third-content__items
+		margin-top: 11px
+		.select2-selection--single
+			height: 35px
+		.select2-container--default
+			.select2-selection--single
+				.select2-selection__arrow
+					height: 33px
+					width: 33px
+					background-size: 20px
+				.select2-selection__rendered
+					margin-top: 0
+					font-size: 12px
+		.select2-results__option[aria-selected]
+			font-size: 12px
+	.select2-container--open
+		.select2-dropdown--below
+			width: 387px!important
+
+	.final-price
+		margin: 0
+
+	.third-content
+		.main-input
+			margin-bottom: 3px
+			font-size: 21px
+		.book_button
+			margin: 25px 0
+			font-size: 22px
+
+
+	.accord
+		label
+			font-size: 10px
+
+	.fifth-block__btn
+		padding: 11px 90px
+		
+		
+
+	.sixth-content
+		padding-top: 9%
+	
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+@media (max-width: 500px)
+  .second-content-red
+    top: 20%
+
+@media (max-width: 500px)
+	.second-content
+		background-position: 20% center!important
+	.second-content-red .second-content-red__title
+		font-size: 22px!important
+		padding: 5px 10px!important
+    height: 35px!important
+    width: 220px!important
+	.second-content-red .second-content-red__p
+		font-size: 14px!important
+		width: 70%
+	.second-content-hhide
+		font-size: 22px!important
+
+	.btn-dark
+		bottom: 145px!important
+		left: 20px!important
+
+@media (max-height:890px)
+  .second-content-red
+		top: 40%
+
+@media (max-height:800px)
+	.modal
+		top: 0
+		h2
+			margin-top: -15px
+
+
+@media (max-width: 400px)
+	.first-place-title
+		bottom: 200px
+		font-size: 34px
+		padding: 0 10px
+	.second-content-red .second-content-red__title
+		font-size: 24px
+		width: 224px!important
+		height: 40px!important
+	.second-content-red .second-content-red__p
+		font-size: 10px!important
+		width: 70%
+		padding-top: 0
+	.btn-dark
+		bottom: 145px
+		left: 20px
+	.form-red-text
+		font-size: 12px
+	.fifth-block .fifth-content__box
+		font-size: 12px
+		padding: 10px 15px
+	.fifth-block .fifth-content__more
+		bottom: 0px
+	.third-content__items
+		margin-top: 30px
+	.third-content .container
+		height: 70%
+	.sixth-content__phrase
+		width: 90%
+		letter-spacing: 0px
+	.btn-dark
+		padding: 7px 50px
+
+@media (max-width: 1170px)
+  .first-place
+    background-position: center
